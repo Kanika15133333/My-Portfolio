@@ -1,0 +1,538 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #172554;
+    padding: 18px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #93c5fd;
+}
+
+/* Home Section */
+.home {
+    min-height: 75vh;
+    background: linear-gradient(135deg, #172554, #2563eb);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.home h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.home h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.home p {
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: #172554;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #bfdbfe;
+}
+
+/* Common Section Styling */
+.section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #172554;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.section p {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* Projects Section */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #1d4ed8;
+    margin-bottom: 12px;
+}
+
+/* Achievements Section */
+.achievement-card {
+    background-color: white;
+    padding: 25px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Contact Section */
+#contact {
+    background-color: #eaf1ff;
+}
+
+#contact a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .home h1 {
+        font-size: 34px;
+    }
+
+    .home h2 {
+        font-size: 20px;
+    }
+
+    .section {
+        padding: 45px 6%;
+    }
+}
+
+
+
+
+/* =================================
+   GENERAL STYLING
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6ff;
+    color: #263238;
+    line-height: 1.7;
+}
+
+/* =================================
+   NAVIGATION BAR
+================================= */
+
+header {
+    background-color: #111827;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #c4b5fd;
+}
+
+/* =================================
+   HOME SECTION
+================================= */
+
+.home {
+    min-height: 85vh;
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #7c3aed,
+        #ec4899
+    );
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.home h1 {
+    font-size: clamp(38px, 6vw, 60px);
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.home h2 {
+    color: #e9d5ff;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.home p {
+    max-width: 650px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Home Button */
+
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: #5b21b6;
+    padding: 13px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+    background-color: #ede9fe;
+    transform: translateY(-5px);
+}
+
+/* =================================
+   COMMON SECTIONS
+================================= */
+
+.section {
+    padding: 85px 10%;
+    text-align: center;
+    scroll-margin-top: 85px;
+}
+
+.section h2 {
+    color: #312e81;
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.section h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    background: linear-gradient(90deg, #7c3aed, #ec4899);
+    margin: 12px auto 0;
+    border-radius: 5px;
+}
+
+.section p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 17px;
+}
+
+/* =================================
+   SKILLS SECTION
+================================= */
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+
+.skill {
+    background: linear-gradient(135deg, #ede9fe, #fce7f3);
+    color: #5b21b6;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 1px solid #ddd6fe;
+    transition: all 0.3s ease;
+}
+
+.skill:hover {
+    background: #5b21b6;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* =================================
+   PROJECTS SECTION
+================================= */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+    gap: 25px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 15px;
+    text-align: left;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(124, 58, 237, 0.15);
+}
+
+.project-card h3 {
+    color: #6d28d9;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 15px;
+    margin: 0;
+}
+
+/* =================================
+   ACHIEVEMENTS SECTION
+================================= */
+
+.achievement-card {
+    background-color: white;
+    padding: 30px;
+    max-width: 650px;
+    margin: auto;
+    border-radius: 15px;
+    border-left: 5px solid #8b5cf6;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    text-align: left;
+}
+
+.achievement-card h3 {
+    color: #6d28d9;
+    margin-bottom: 10px;
+}
+
+/* =================================
+   CONTACT SECTION
+================================= */
+
+#contact {
+    background: linear-gradient(135deg, #ede9fe, #fce7f3);
+}
+
+#contact p {
+    margin-bottom: 15px;
+}
+
+#contact a {
+    color: #6d28d9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: #db2777;
+    text-decoration: underline;
+}
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* =================================
+   MOBILE RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 18px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .home {
+        min-height: 75vh;
+        padding: 65px 20px;
+    }
+
+    .home h1 {
+        font-size: 38px;
+    }
+
+    .home h2 {
+        font-size: 21px;
+    }
+
+    .section {
+        padding: 60px 6%;
+    }
+
+    .section h2 {
+        font-size: 30px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
