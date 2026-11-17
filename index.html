@@ -1,155 +1,229 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | Computer Science Student</title>
+    <meta name="theme-color" content="#090b18">
+    <title>Kanika Sharma | Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">MyPortfolio</h2>
+<header class="header">
+    <nav class="navbar">
+        <a href="#home" class="logo">K<span>.</span></a>
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Experience</a></li>
+            <li><a href="#contact" class="nav-contact">Contact Me ↗</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- Home Section -->
-    <section id="home" class="home">
-        <h1>Hello, I'm Kanika</h1>
-        <h2>Computer Science Engineering Student</h2>
-        <p>
-            I am a passionate student interested in programming,
-            problem-solving and software development.
-        </p>
-        <a href="#about" class="btn">Know More About Me</a>
+<main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="availability">
+                <span class="status-dot"></span>
+                B.Tech CSE (Artificial Intelligence)
+            </div>
+
+            <p class="hero-intro">HELLO, I'M</p>
+            <h1>Kanika <span>Sharma.</span></h1>
+
+            <h2>Learning. Building. <span>Growing.</span></h2>
+
+            <p class="hero-description">
+                A Computer Science student passionate about programming,
+                problem-solving, data analysis and building meaningful
+                technology-driven solutions.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">Explore My Work ↗</a>
+                <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+            </div>
+
+            <div class="hero-socials">
+                <a href="https://github.com/Kanika15133333" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                <a href="https://www.linkedin.com/in/kanika-sharma-460868390" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="hero-monogram">K<span>.</span></div>
+            <div class="floating-card card-top">✦ &nbsp; Curious Mind</div>
+            <div class="floating-card card-bottom">⌘ &nbsp; Future Software Engineer</div>
+        </div>
+
+        <a href="#about" class="scroll-indicator">SCROLL TO EXPLORE ↓</a>
     </section>
 
-    <!-- About Section -->
+    <!-- ABOUT -->
     <section id="about" class="section">
-        <h2>About Me</h2>
+        <div class="section-heading">
+            <p class="section-label">GET TO KNOW ME</p>
+            <h2>About <span>Me</span></h2>
+        </div>
 
-        <p>
-            I am pursuing B.Tech in Computer Science and Engineering
-            (Artificial Intelligence).
-
-            I enjoy learning programming, solving problems and
-            exploring new technologies. My goal is to become a
-            skilled software engineer and build useful applications.
-        </p>
+        <div class="about-card">
+            <div class="about-number">01</div>
+            <div>
+                <h3>Turning curiosity into code.</h3>
+                <p>
+                    I am pursuing B.Tech in Computer Science and Engineering
+                    (Artificial Intelligence). I enjoy learning programming,
+                    solving problems and exploring new technologies.
+                    I am particularly interested in software development,
+                    data analysis and creating useful applications.
+                </p>
+                <p>
+                    My goal is to continuously improve my technical skills
+                    and become a skilled software engineer who builds
+                    impactful solutions.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- SKILLS -->
     <section id="skills" class="section">
-        <h2>My Skills</h2>
+        <div class="section-heading">
+            <p class="section-label">WHAT I WORK WITH</p>
+            <h2>My <span>Skills</span></h2>
+        </div>
 
         <div class="skills-container">
-            <div class="skill">C++</div>
-            <div class="skill">Python</div>
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript (Learning)</div>
-            <div class="skill">Git & GitHub</div>
+            <div class="skill"><span>01</span><h3>C++</h3><p>Programming & DSA</p></div>
+            <div class="skill"><span>02</span><h3>Python</h3><p>Programming & Analysis</p></div>
+            <div class="skill"><span>03</span><h3>HTML</h3><p>Web Structure</p></div>
+            <div class="skill"><span>04</span><h3>CSS</h3><p>Web Styling</p></div>
+            <div class="skill"><span>05</span><h3>JavaScript</h3><p>Currently Learning</p></div>
+            <div class="skill"><span>06</span><h3>Git & GitHub</h3><p>Version Control</p></div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    
-<section id="projects" class="section">
-    <h2>My Projects</h2>
-
-    <div class="projects-container">
-
-        <div class="project-card">
-            <h3>Clustering Analysis</h3>
-            <p>An unsupervised machine learning project that identifies patterns and groups similar data points.</p>
-            <p><strong>Technologies:</strong> Python, Pandas, NumPy, Scikit-learn, Matplotlib</p>
-            <a href="https://github.com/Kanika15133333" target="_blank">
-    View on GitHub
-</a>
-        </div>
-
-        <div class="project-card">
-            <h3>Diabetes Analysis</h3>
-            <p>A healthcare data analysis and machine learning project exploring diabetes-related data and identifying patterns.</p>
-            <p><strong>Technologies:</strong> Python, Pandas, NumPy, Seaborn, Scikit-learn</p>
-        </div>
-
-        <div class="project-card">
-            <h3>House Price Prediction</h3>
-            <p>A machine learning project that uses housing data and regression techniques to estimate house prices.</p>
-            <p><strong>Technologies:</strong> Python, Pandas, NumPy, Matplotlib, Scikit-learn</p>
-        </div>
-
-        <div class="project-card">
-            <h3>HR Analytics</h3>
-            <p>A data analytics project exploring HR data to identify trends and useful insights.</p>
-            <p><strong>Technologies:</strong> Python, Pandas, NumPy, Matplotlib, Seaborn</p>
-        </div>
-
-        <div class="project-card">
-            <h3>COVID-19 Data Analysis</h3>
-            <p>A data analysis project exploring COVID-19 datasets and visualizing trends and patterns.</p>
-            <p><strong>Technologies:</strong> Python, Pandas, NumPy, Matplotlib, Seaborn</p>
-        </div>
-
-    </div>
-</section>  
-   
-
-    <!-- Achievements Section -->
-    <section id="achievements" class="section">
-        <h2>Achievements & Experience</h2>
-
-        <div class="achievement-card">
-            <h3>C++ Internship</h3>
-            <p>
-                Completed a C++ internship at Thiranex,
-                gaining practical programming experience.
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects-section">
+        <div class="section-heading">
+            <p class="section-label">THINGS I'VE BUILT</p>
+            <h2>Featured <span>Projects</span></h2>
+            <p class="section-subtitle">
+                A collection of my work, experiments and learning experiences.
             </p>
         </div>
+
+        <div class="projects-container">
+
+            <article class="project-card">
+                <div class="project-top"><span>01 / MACHINE LEARNING</span><span>↗</span></div>
+                <div class="project-icon">◈</div>
+                <h3>Clustering Analysis</h3>
+                <p>An unsupervised machine learning project that identifies patterns and groups similar data points.</p>
+                <div class="tech-stack"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span></div>
+                <p class="project-link-placeholder">Individual project link coming soon ↗</p>
+            </article>
+
+            <article class="project-card">
+                <div class="project-top"><span>02 / DATA ANALYSIS</span><span>↗</span></div>
+                <div class="project-icon">⌁</div>
+                <h3>Diabetes Analysis</h3>
+                <p>A healthcare data analysis and machine learning project exploring diabetes-related data and identifying patterns.</p>
+                <div class="tech-stack"><span>Python</span><span>Pandas</span><span>Seaborn</span><span>Scikit-learn</span></div>
+                <p class="project-link-placeholder">Individual project link coming soon ↗</p>
+            </article>
+
+            <article class="project-card">
+                <div class="project-top"><span>03 / PREDICTIVE MODELING</span><span>↗</span></div>
+                <div class="project-icon">⌂</div>
+                <h3>House Price Prediction</h3>
+                <p>A machine learning project that uses housing data and regression techniques to estimate house prices.</p>
+                <div class="tech-stack"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span></div>
+                <p class="project-link-placeholder">Individual project link coming soon ↗</p>
+            </article>
+
+            <article class="project-card">
+                <div class="project-top"><span>04 / DATA ANALYTICS</span><span>↗</span></div>
+                <div class="project-icon">◎</div>
+                <h3>HR Analytics</h3>
+                <p>A data analytics project exploring HR data to identify trends and useful insights.</p>
+                <div class="tech-stack"><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span></div>
+                <p class="project-link-placeholder">Individual project link coming soon ↗</p>
+            </article>
+
+            <article class="project-card">
+                <div class="project-top"><span>05 / DATA VISUALIZATION</span><span>↗</span></div>
+                <div class="project-icon">⌘</div>
+                <h3>COVID-19 Data Analysis</h3>
+                <p>A data analysis project exploring COVID-19 datasets and visualizing trends and patterns.</p>
+                <div class="tech-stack"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span></div>
+                <p class="project-link-placeholder">Individual project link coming soon ↗</p>
+            </article>
+
+        </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
+    <!-- EXPERIENCE -->
+    <section id="achievements" class="section">
+        <div class="section-heading">
+            <p class="section-label">MY JOURNEY SO FAR</p>
+            <h2>Experience & <span>Achievements</span></h2>
+        </div>
 
-        <p>Email: kanika1915@gmail.com</p>
-
-        <p>
-            GitHub:
-            <a href="https://github.com/Kanika15133333" target="_blank">
-                Visit My GitHub
-            </a>
-        </p>
-
-        <p>
-            LinkedIn:
-            <a href= "https://www.linkedin.com/in/kanika-sharma-460868390" target="_blank">
-                Visit My LinkedIn
-            </a>
-        </p>
+        <div class="experience-card">
+            <div class="experience-icon">✦</div>
+            <div>
+                <p class="section-label">INTERNSHIP EXPERIENCE</p>
+                <h3>C++ Internship</h3>
+                <h4>Thiranex</h4>
+                <p>
+                    Completed a C++ internship, gaining practical programming
+                    experience and strengthening my understanding of
+                    programming concepts.
+                </p>
+            </div>
+            <span class="experience-year">2026</span>
+        </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Kanika | All Rights Reserved</p>
-    </footer>
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+        <p class="section-label">LET'S CONNECT</p>
+        <h2>Have an idea? <span>Let's talk.</span></h2>
+        <p class="contact-description">
+            I'm always interested in learning, collaborating and connecting
+            with people who love technology.
+        </p>
 
-    <script src="script.js"></script>
+        <a href="mailto:kanika1915@gmail.com" class="btn primary-btn">Say Hello ↗</a>
 
+        <div class="contact-links">
+            <a href="mailto:kanika1915@gmail.com">Email</a>
+            <a href="https://github.com/Kanika15133333" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/kanika-sharma-460868390" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Designed & built by <span>Kanika Sharma</span> · © 2026</p>
+    <a href="#home">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
